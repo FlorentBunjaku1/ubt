@@ -1,0 +1,24 @@
+DCHP - Dynamic Host Configuration Protocol : Serverat me kete protokoll dmth DHCP Serverat mundesojne bashkangjitjen e ip adresave ne menyr dinamike ne hostet qe lidhen ne rrjet.
+Cooper-straight through : Kabell e cila perdoret kur lidhim dy paisje te llojit te ndryshem
+Cooper-crossover : Kabell e cila perdoret kur lidhim pasije te llojit te njejte.
+Switch eshte pasije multi portshe e cila perdoret per te lidhur hostet qe kane ip adresa tete njetit subnet , ndersa routeri i lidh paisjet te cilat i perkasin subnetave te ndryshme.
+Per tu qasur nga largesia ne switch , pra per te mundur ta menaxhojm nga largesia duhet te perdoret protokolli telent, ket e arrijm me ane te vty(Virtual Teletype) kjo komand na muneson te 
+komandojme nga largesia mirpo per te arritur nje gje te tille rekomandohet vendosja e pasvordit ne linet e vty edhe ati te consoles (line vty 0 15) (line con 0)
+VLAN (Virtual Local Area Network) : Na mundeson qe nje switch ta ndajme ne shume mini-switcha virtual, kjo na lejon qe topologjia jon logjike mos te nvaret nga ajo fizike.
+
+Acces Port : Eshte port i cili transmeton trafik per vetem nje VLAN.
+Trunk Port : Eshte port i cili transmeton trafik per shum VLAN-E.
+Native Vlan : Ne Trunk Port eshte nje VLAN , i cili i caktohet cdo trafiku te pa etiketuar ne trunk port.
+
+VLAN e ndane rrjeten ekzistuese ne rrjeta logjike ku secila pasije mund te komunikoj vetem me paisjet e tjera qe gjinden ne te njejtin VLAN,  Secili VLAN krijon brodcast domain te vetin dhe per te komunikuar
+dy VLAN midis veti nevojitet nje router ne te cilin VLAN duhet te jen te lidhura, gjithashtu VLAN mundeson qe te grupohen hostet edhe nese ato gjinden ne switcha te ndryshem.
+VLAN Menaxhues eshte nje VLAN te cilit ne i shoqerojme nje ip addrese dhe subnet maske, me ane te cilit ne mund ti qasemi switchit nga largesia dhe ta menaxhojme ate, nrm duke perdorur protokollet si HTTP
+Telenet, SSH etj. Paraprakisht eshte i zgjedhur VLAN 1 , mirpo nuk eshte ide e mir te perdoret si menaxhues.
+
+HTTP Serveri na ofron sherbimin e qasjes ne web faqe
+DNS Serveri na ofron sherbmin e bashkangjitjes se nje emri te kuptushem i cili te drejton drejt ip te caktuara
+FTP Serveri na ofron sherbimin e ruajties se fajllave
+E-Mail Serveri na ofron sherbimin e dergimit dhe pranimit te email-ave 
+
+Per te arritur qe te kontrollojm IOT paisjet nga largesia , na duhet nje server ose dy , qe na ofrojne DNS dhe 
+IOT sherbime, na duhet paisjet si dhe eshte mir te perdoret nje router wireles qe ti lidhim ndermjet vete

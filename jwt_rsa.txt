@@ -1,0 +1,35 @@
+RSA JWT
+
+p - public key
+k - private key
+x - header
+y - payload
+z - signature => f(x+y, k) where f - encryption function
+
+x.y.z
+
+Using RSA (or any other symetric algorithm to create signatures) allows us to use a token that is produced by one creator to validate services on other places.
+That because with public key and private key we can valdiate 100% the issuer of that token, and we can do that while keeping only one producer.
+
+Creating token:
+	1. Create the header and the payload:
+		testheader
+		testpayload
+	2. Encode header and payload with BASE64 string
+		x = dxpqw1r3
+		y = sap1o235
+	3. Create the signature with RSA:
+		c = x + "." + y
+		z = RSA(c, k) => d1w1k412edsq
+	4. Crate JWT
+		JWT = x + "." + y + "." + z
+
+Validating token:
+	1. Get the token and seprate it:
+		JWT = dxpqw1r3.sap1o235.d1w1k412edsq
+		x = dxpqw1r3
+		y = sap1o235
+		z = d1w1k412edsq
+	2. Validate siganture using the public key:
+		r = RSA(z, p) => dxpqw1r3.sap1o235
+		r == (x + "." + y) ? valid : invalid		

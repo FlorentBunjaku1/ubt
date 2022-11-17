@@ -1,0 +1,135 @@
+/* Under NAV */
+.under-nav{
+    width: 100%;
+    border-bottom: 1px solid rgba(101,100,100,0.3);
+}
+.under-nav .under-content{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.under-content h3{
+    font-weight: lighter;
+    text-transform: uppercase;
+    color:  rgb(101,100,100);
+}
+
+/* FORM  */
+main form,
+main .map {
+    margin-bottom: 25px;
+    border: 1px solid rgba(101,100,100,0.3);
+    border-radius: 5px;
+    
+}
+form .top-info{
+    background:rgb(245,245,245);
+    color:  rgb(101,100,100);
+    border-bottom: 1px solid rgba(101,100,100,0.3);
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+form .alertMsg{
+    color:  rgb(101,100,100);
+    text-align: right;
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px;
+}
+form label{
+    color:  rgb(101,100,100);
+    font-weight: bold;
+}
+form input, 
+form select{
+    border: 1px solid #CCCCCC ;
+    border-radius: 8px;
+    padding: 0 8px;
+    height: 35px;
+    width: 100%;
+}
+
+form select:focus,
+input:focus, 
+.mesage > textarea:focus{
+    box-shadow: 1px 0px 5px 3px rgba(66,169,227,0.35);
+    border: 1px solid rgba(66,169,227,0.35);
+    outline: none;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px 20px;
+}
+.form-container > div{
+    margin: 15px 0;
+}
+.personal-infos, .contact-infos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact-infos div,.personal-infos div{
+    width: 45%;
+}
+
+/* .personal-infos, .contact-infos > input{
+    width: 50%;
+} */
+.mesage{
+    display: flex;
+    flex-direction: column;
+   
+}
+.mesage > textarea{
+    border: 1px solid #CCCCCC ;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.kopje{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.kopje input{
+    width: 16px;
+    margin-right: 5px;
+    outline: none;
+}
+.kopje input:focus{
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.dergo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.dergo button{
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color:rgb(26, 128, 26);
+    color: white;
+}
+
+@media only screen and (max-width: 800px){
+    .personal-infos, .contact-infos{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contact-infos div,.personal-infos div{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+}

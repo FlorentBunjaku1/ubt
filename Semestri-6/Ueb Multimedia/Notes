@@ -1,0 +1,119 @@
+Multimedia - eshte media e cila perdor forma te ndryshme te prezentimit dhe procesimit te informacionit.
+
+Elementet kryesore multimediale jane: teksti, grafika, video, animacionet dhe audio.
+	Tekst: eshte grup i karaktereve qe perdoren per te krijuar fjal ose paragrafe.
+	Grafikat: Jane paraqitja digjitale jo tekstuale e informacionit, si imazhet, grafet, viaztimet.
+	Animacionet: Jane seri e vizatimeve qe japin ndjesine e levizjes.
+	Videot: Jane seri e imazheve, minimum 15 imazhe ne sekond te cilat japin ndjesine e levizjes.
+	Audio: Zeri, zhurma etj.
+
+Multimedia karakterizohet ne: 
+	Linerare: Konsumatori nuk ka kontroll mbi procesin multimedian (psh kinemaja).
+	Jo-Linerare: Perdoret interaktiviteti per kontrollin e perjetimit multimedial.
+
+Syri perbehet nga 100 milion thupra dhe 5 milion boca, te fundit perdoren per identifikimin e ngjyrave rgb, ndersa te parat perdoren per identifikimin e drites.
+
+CIE XYZ - Eshte standard i specifikimit te ngjyres sipas ndriqimit (Y) dhe ngjyres (XZ).
+
+Modelet e ngjyrave:
+	RGB: ndryshe quhet burim drite ndriques, eshte modeli me i popullarizuar i cili perdoret ne monitora dhe grafika kompjuterike.
+	
+	CMY (Cyan, Magenta, Yellow): ndryshe quhet burim dirte reflektues, perdoret ne shtyp.
+	
+	YUV perdoret nga enkodim analog.
+	
+	YCbCr perdoret nga enkodimet digjitale si JPG dhe MPEG. Ky lloj i eknodimit e zvogelon numrin e ngjyrave te perdorura ne imazh.
+	
+	HSL, HSV, HSB:
+		(H)ue: ose ngjyre.
+		(S)atruation: pastertia dhe itensiteti i ngjyres.
+		(L)ightness / (B)rightnes / (V)alue : Ndriqimi.
+
+	HSB != HSL && HSB == HSV
+	Brightnes perdoret per ngjyra subtractive ndersa Lightnes perdore per ngjyra aditive.
+
+Etiketat semantike jane: div, p, ul, ol, header, article.
+
+familjet e fonteve: 
+	Sans serif: Duhet te perdoret ne web.
+	Serif: Duhet te perdoret per printim.
+	Monospace: Duhet te perdoret per typewriter dhe code.
+	Cursive.
+
+Imazhi digjital eshte nje objekt qe pershkruan perceptim vizual te nje fotografie dy dimensionale, ne kontestin e sinjali imazhi eshte nje amplitude e shperndare e ngjyrave.
+
+Imazhet kategorizohen ne:
+	Raster: Perdorin pixela.
+	Vektor: Perdorin format primare gjeometrike.
+	Metafile graphics.
+	Raster + Vektor.
+
+Thellesia e ngjyrave ne CSS eshte 24 bit, 8 bit njgyre primare (RGB).
+
+Formatetet e raster imazheve: BMP, TIFF, PNG, GIF, JPEG.
+
+JPG/JPEG: jane standard ne web per iamzhe qe nuk kane shume detaje, e mire e ktij formati eshte madhesia e vogel e fajllit, e keqe e ketij formati eshte kompresimi me humbje.
+
+GIF: Perdoret per video/animacione te shkurtra, te mire e ka madhesine e vogel, kompersimi pa humbje, animacioni dhe transparenca. Te keqe e ka qe eshte 8 bit depth, transparence range e ka ose 0% ose 100%.
+
+PNG: perdoret per ikona, logo dhe imazhe te vogla. Te mira i ka qe lejon 24 dhe 48 bit, kompersim pa humbje, animacione (APNG), transparence te plote dhe te pjeseshme. Te keqe e ka madhesine e fajllit.
+
+WebP: perkrah dy komperesimet me dhe pa humbje, kompresimi me humbje eshte 24% me i vogel se PNG, kompresimi me humbje eshte diku 25-34% me i vogel se JPG. ka perdorim universal perkrah animacionet dhe transparencen. Te mir e ka madhesin e fajllit dhe kualitetin e imazheve. Te keqe e ka se nuk perkrahet ende nga te gjitha llojet e browserave.
+
+Vektor imazhet: Jane imazhe te bazuara ne modele matematikore dhe menyra simbolike.
+Autocad (DWG, DXF)
+Adobe illustrator (AI)
+SVG (Scalable vector graphics)
+
+SVG eshte lloji i imazheve qe perdoret ne web, rekomandohet nga w3c, eshte e bazuar ne xml dhe eshte standard i hapur.
+
+SVG vs PNG: 
+	SVG: Lightweight, element grafik, animacione, scalable, e mir per search engine.
+	PNG: Imazhe, raster (pixel based).
+
+DPR (Device pixel ratio) : Relacioni midis pixelave fizik dhe atyre logjik. dpr = physical / logical.
+DIP (Device indepedent pixel): Pixelat logjik.
+DPI (Dots per inch)
+PPI (Pixels per inch)
+
+CSS pixel eshte njesi e madhesise e cila reprezenton nje pik te vetme ne ekran e cila mund te shihet nga syri i njeriut pa problem.
+
+Goals te paraqitjes se imazheve ne web: 
+	Paisjet e ndryshme te ofrohen me imazhe me kualitet te ndryshem duke u bazuar ne DPR.
+	Fotoja te pershtatet me dizajnin responsiv.
+	Shfletuesit e ndryshem te perkrahin formate te ndryshme
+	Art direction: Te tregojme kontekstin e imazhit pa e shfaqur te gjith imazhin por vetem nje pjese (croped) te vogel te saj qe paraqet pjesen kryesore
+
+Codec - Paraqet program softurik qe perdoret per te enkoduar dhe dekoduar kanale multimediale ne nje format te caktuar.
+
+Codec == format.
+
+Stream - Eshte nje sinjal i vetem medial (video, audio, tekst, te dhena).
+
+Media Container - Ka nje container format qe identifikohet nga extension i fajllit, permban streams te cilat enkodohen dhe dekodohen me algoritme te ndryshme.
+
+Video formatet:
+	MP4: Media container format, H.26 video codec, AAC video codec, perkrah HSL.
+	Matroshka: Eshte nje format i hapur dhe pa pagese i cili mund te permbaj nje numer te pakufizuar te streams, ka extensions si mkv, mk3d, mka, mks. V8 ose V9 codec.
+	AVI: Media container format, i krijuar nga microsoft, no variable bit rate, nese nuk kompresohet nxen shume hapsire.
+	WebM: E bazuar ne matroshka format, V8 ose V9 codec.
+
+Audio only containers:
+	WAV: e krijuar nga windows dhe ibm, zakonisht e ka kompresuar, perdore shume ne windows.
+	AIFF: e krijuar nga apple perdoret ne Mac OS.
+
+PCM - Eshte format i pa kompresuar i audio sinjaleve analoge, perdoret ne shumicen e CD dhe DVD.
+Bitrate = kb/s
+
+Kompresimet me humbje: 
+	MP3 - Format i kompremuar me humbje, perkrah dy kanale.
+
+	AAC (Advanced audio coding) - Pasardhes i MP3, perdoret ne youtube, android, itunes, ka kualitet me te mire se mp3, perkrah deri ne 48 kanale.
+
+	Ogg Vorbis - Ogg eshte container ndersa Vorbis eshte codac, eshte open source, perkrah deri ne 255 kanale.
+
+Kompresimet pa humbje:
+	FLAC (Free lossess audio codec) - Open source, pa humbje, komprimin 60% ne dallim me ta komprimuaren, shihet si codec me i mire momentalisht, nese duam te ruajm ne CD pa humbje duhet perdorur kete codec, 8 channels per stream.
+
+Apple Music - perdore AAC.
+Spotify - perdor Ogg Vorbis.

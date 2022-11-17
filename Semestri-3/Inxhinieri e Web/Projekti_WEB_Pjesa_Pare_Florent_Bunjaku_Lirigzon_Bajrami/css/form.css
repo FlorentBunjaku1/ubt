@@ -1,0 +1,71 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: white;
+}
+form {
+  margin: 140px auto;
+  width: 500px;
+  background-color: white;
+  position: relative;
+  padding: 100px 0px 50px 0px;
+  border: 1px solid black;
+}
+img {
+  width: 150px;
+  position: absolute;
+  top: -80px;
+  left: 170px;
+}
+.container {
+  width: 50%;
+  margin: auto;
+}
+.item {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+}
+.item input {
+  flex: 1;
+}
+label {
+  background-color: #00923f;
+  color: white;
+  padding: 5px 8px;
+  transition: 0.5s;
+}
+#lname {
+  font-size: 12px;
+}
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  background-color: #00923f;
+  width: 200px;
+}
+input:focus {
+  box-shadow: 1px 0px 5px 3px rgba(66, 169, 227, 0.35);
+  border: 1px solid rgba(66, 169, 227, 0.35);
+  outline: none;
+}
+.container div:last-child {
+  margin-top: 20px;
+}
+label:hover {
+  color: #00923f;
+  background-color: white;
+  transition: 0.5s;
+}
+.log {
+  font-size: 15px;
+}
+.hidden {
+  display: none;
+}

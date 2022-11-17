@@ -1,0 +1,14 @@
+Moduli “Termini” - Qëllimi I ktij moduli është plotësimi I nevojave të perdoruesit qe kane te bejne drejtperdrejt ose indirekt me terminet.
+Ky modul ben te mundur caktimin e terminit, pas mbajties se terminit I jep mundesin pacienteve te vlersojne punen e doktorreve. Gjithashtu 
+u jep mundesin qe ti ruaj doktoret ne listen e te preferuarve. Ofron api me te cilin mund te perdoren listat e termineve ose pacientet individual nga modulet tjera te sistemit.
+
+Moduli I “Schedul” - Funksionet e ktij moduli jane te fokusuara drejt plotesimit te kerkesave te doktoreve dhe administruese, 
+sic eshte rasti ku doktori mund te menagjoj te dhenat profesionale duke caktuar spezilizimin dhe sherbimet, duke vendosur nje orar pune. 
+I mundeson doktorit ta mirembaje profilin me ane te fshirjes se komenteve te jo profesionale, adekuate te lena nga pacientet. Administruesve 
+I mundeson te mirembajne sistemin duke perditsuar ne kete rast listen e specalizimeve dhe sherbimeve qe mund te zgjedhen. Adminave ky modul I 
+jep mundesin e aprovimit te veprimeve te cakuara sic eshte puna e anulimeve te termineve ose fshirjes se komenteve.
+
+Moduli “Vaksinimi” - Eshte moduli I cili ne menyr reciproke bashkpunon me API e modulit “Termini” duke bere te mundur funksionin e 
+aplikimit te pacientit per vaksinim ne ndonje qender vaksinueve. Perveq tjerash ky modul I mundeson qendrave vaksinuese te aprovojne 
+aplikimet si dhe te beje kerkesa per furnizim me vaksina nga provider te ndryshem duke perdorur API te sistemeve te jashtme(ndonje sistem 
+I autorizuar nga shteti per furnizime me vaksina).

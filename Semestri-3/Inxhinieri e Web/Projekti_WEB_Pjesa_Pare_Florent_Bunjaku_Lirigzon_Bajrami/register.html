@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+    <main>
+
+          <!-- Registeer form -->
+        <form action="" class="register">
+        <a href="index.html"><img src="images/IADKsymb.png" alt=""></a>
+        <div class="container">
+            <div class="item">
+                <label for="f_name"><i class="fa fa-user-o"></i> </label>
+                <input type="text" name="f_name" id="f_name" placeholder="First Name">
+            </div>
+            <div class="item">
+                <label for="l_name" id="lname">Last Name</label>
+                <input type="text" name="l_name" id="l_name" placeholder="Last Name">
+            </div>
+            <div class="item">
+                <label for="email"><i class="fa fa-envelope-o"></i></label>
+                <input type="email" name="email" id="r_email" placeholder="Email">
+            </div>
+            <div class="item">
+                <label for="address"><i class="fa fa-address-card-o"></i></label>
+                <input type="text" name="address" id="address" placeholder="Address">
+            </div>
+            <div class="item">
+                <label for="phone"><i class="fa fa-phone"></i></label>
+                <input type="text" name="phone" id="phone" placeholder="Telephone Number">
+            </div>
+            <div class="item">
+                <label for="username"><i class="fa fa-user-circle"></i></label>
+                <input type="text" name="username" id="username" placeholder="Username">
+            </div>
+            <div class="item">
+                <label for="password"><i class="fa fa-key"></i></label>
+                <input type="password" name="password" id="r_password" placeholder="Password">
+            </div>
+            <div class="item">
+                <label for="confirm_password"><i class="fa fa-key"></i></label>
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+            </div>
+            <div class="items">
+                <button type="submit" id="register">Register</button>
+            </div>
+            <div class="log">
+                Already have an account? <a href="login.html" class="btn"><i class="fa fa-sign-in"></i> Login</a>
+            </div>
+        </div>
+        </form>
+     
+    </main>
+
+    <script src="javascript/loginValidation.js"></script>
+    <script src="javascript/registerValidation.js"></script>
+</body>
+</html>

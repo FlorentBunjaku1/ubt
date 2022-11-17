@@ -1,0 +1,6 @@
+Klauzola With perdoret per te organizuar queryt komplkse, perkatesisht jane si zevendesim i sub query ,  with e reprezenton subqueryn si nje tabel ose view te ciles mund te ju qasemi me ane te emrin te cilin
+ja kemi vene , ka sintaks si ne vijim : With Emri_Subqueryt AS (trupi i sub-queryt), ekzekutimi i query te cilat e perdorin ket with duhet te behet ne te njejten koh me with , sepse with nuk ruhet askund
+vetem gjat ekzekutimit te kodit eshte e qaseshme.
+
+Views Jane tabela virtuale te cialt perdoren per qeshtje siguri, jane po thuajse te nejta me tabelat reale vetem se nuk mund te insertojm te dhena por mund ti marrim vetem nga tabelat tjera ose views tjera
+per te krijuar view perdorim sintaksen : Create View Emri_Views As ( Nje query )

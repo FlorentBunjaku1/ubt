@@ -1,0 +1,135 @@
+Each date have slots.
+Each slots has a time that starts and a time that ends.
+You want to leave the user to create orare base
+
+Secila orar ka slots
+Secili slots e ka oren kur fillon edhe naj info shtese si description a najse qe i ka kallzon nashta cila fush
+Useri munet me zgjedh nese po don qat orar me apliku veq per 1 dit per 1 jav,  1 muj ose per 1 vit.
+Orar ka me pas per cdo dit
+Orari me vleren type me te vogel aplikohet [ Nese ka orar ditor per qat dit meret qaj orar, nese ka orar javor meret orari javor para mujorit, nese ka orar mujor meret para orarit me vit
+Orari ditor identifikohet ne baze te dates.
+Useri duhet me mujt me caktu orarin per 1 jav ose 1 mujt ose 1 vit ne baze te diteve te javes.
+
+
+Orari: {
+	sportFieldId: "1",
+	date: "28/04/2022",
+	slots: [
+		{
+			startTime: "28/04/2022 01:01:01",
+			description: "Do te mbahet ne fushen 01"
+		}
+	],
+	type: "DayTimeSlot"
+}
+
+Orari: {
+	sportFieldId: "1",
+	slots: [
+		{
+			startTime: "28/04/2022 01:01:01",
+			description: "Do te mbahet ne fushen 01"
+		}
+	],
+	type: "WeekTimeSlot | MonthTimeSlot | YearTimeSlot"
+}
+
+
+
+E mer kohen si string tani e validon tu munu me pars ne timestamp nese sbon ja kthen edhe GG.
+Osht nastha mir me shfaq dika edhe time zonen ku osht qajo fush.
+
+Mas mirti mos me lan userin me mujt me shtu scheduls qe jon dites tnjojt dmth, nese e kqyr me shtu edhe per muj edhe per vit i thu mfal po e ki ni orar tcaktum ma heret me per muj per qit dit qe ska skadu hale nese don me bo update bone nese jo GG.
+
+Krijo nje helper klas per date time e cila e zgjedh kohen e skadimit per oraret ne baze te type (week, month, year)
+
+
+Sa here qe te shtohet nje sport field ne sistem me ane te lokacionit na munem me gjet time zonen edhe baze tsaj i kqyrum nese slotat kohor jon hale relevant ose jo.
+
+Nese per diten e sotme ka orar edhe daily edhe recurring e kthen veq ata tsotit.
+
+===========================================
+E lejon userin me mujt me shtu tipit tnjojt me dit te njojt vetem dhe vetem nese nuk ka hiq orar per qat dit me qat tip
+ose nese ka edhe veq se kane skadu, normal skadimin e bon ne baze te dates se sodit me time zone te njojt me ata te sport field, edhe i thu qe munet me i bo update slotat.
+
+I kemi dy lloje te orareve [premanet - expire date e kane null, day - expire date e kan 1 dat ma shume se data ku jon apliku], kjo na detyron me shtu edhe 1 field extra
+qe tregon daten kur u kriju.
+
+Nese useri don me bo update orarin premanent duhet me u siguru qe nuk ka asni slot te nxanun per qat dit, nese ka duhet mu anulu niher terminet tani me ndrru orarin.
+Nese useri don me shtu orar te ri ditor, duhet me u siguru qe nuk ka asni slot te nxanun ne qat dit te javes.
+
+Ne daily schedules diten e javes e mer nga data e ofruar.
+
+// TODO: Validim per kohen e sloteve, validim per diten qe e ka ofru useri, validim per fushen qe e ka ofru useri me kqyr nese ekziston. (Create Permanent Schedule)
+// TODO: Kthe date time nbaz te time zones te sprot field.
+
+Munum me perdor ditet si gjith, dmth e hane = 1, e diele = 7.
+
+ScheduleTable:
+{
+	Id: 1,
+	Type: Day,
+	Day: 2,
+	ExperationDate: 29/04/2022,
+	SportFieldId: 5
+}
+
+SlotTable:
+{
+	Id: 2,
+	ScheduleId: 1,
+	Time: 12:30,
+	Description: "something"
+}
+
+OcuptaionTable:
+{
+	id: 4,
+	SlotId: 2,
+	Date: 28/04/2022,
+	OccupatorId: 101
+}
+
+
+-----
+Today: 29/04/2022
+
+ScheduleTable:
+{
+	Id: 1,
+	Type: Month,
+	Day: 0,
+	ExperationDate: 01/05/2022,
+	SportFieldId: 5
+}
+
+SlotTable:
+{
+	Id: 2,
+	ScheduleId: 1,
+	Time: 12:30,
+	Description: "something"
+}
+
+OcuptaionTable:
+{
+	id: 4,
+	SlotId: 2,
+	Date: 29/04/2022,
+	OccupatorId: 101
+}
+
+
+
+ami krej slotat e lire per 1 jav range prej ni date te caktume edhe kthemi slotat ne baze te dites.
+
+{
+	"AvaliableSlots": [
+		{
+			"slotId": 1,
+			"date": 03/05/2022,
+			"time": 12:30:00,
+			"description": "something"
+		}
+	]
+}

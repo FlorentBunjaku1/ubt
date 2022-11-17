@@ -1,0 +1,11 @@
+vizion:   me qene aplikacioni me i mire i kesaj fushe, pra me qene applikacion model
+qellim: applikacioni i pare i ksaj fushe per smart healthcare.
+
+
+
+psh
+per hapjen e  nje restaurant:
+vizion: qdo person do ta kete enderr qe te vije ne kete restaurant
+qellim: me fitu para
+objektiv: me pas staf profesional
+

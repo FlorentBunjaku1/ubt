@@ -1,0 +1,24 @@
+public class Graph()
+
+	Graph(int V) --Krijon graf te zbrazet me int numer te kulmeve dhe pa segmente pra i bosh
+	Graph(In in) --Krijon graf tu bazu ne kulmet e pranuara nga ndonje file i pranuar si input
+
+
+	void addEdges(int V , int W) -- Shton nje segment qe i lidh kulmet V dhe W mes vete.
+	
+	Iterable <Integer> adj(int V) --Na kthen nje list te gjitha kulmeve fqinje te kulmit V
+
+	int V() -- Kthen numrin e kulmeve qe gjinden ne graf
+	
+	int E() --Kthen numrin e segmenteve qe gjinden ne graf
+
+
+	Kodi per kthim (gjetje) te degree te nje kumli
+
+	public static int degree(Graph G, int V){
+		int degree = 0;
+		for(int W : G.adj(V)){
+			degree++;
+		}
+		return degree;
+	}

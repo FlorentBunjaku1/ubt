@@ -1,0 +1,3 @@
+JVM Structure : https://www.geeksforgeeks.org/jvm-works-jvm-architecture/#:~:text=Method%20area%20%3AIn%20method%20area,is%20stored%20in%20heap%20area.
+
+JVM-Stack : https://www.geeksforgeeks.org/java-virtual-machine-jvm-stack-area/?ref=rp

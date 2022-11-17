@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="v01Stili.css">
+  <style>
+    .box{
+      color: red;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    ul{
+      position: relative;
+      right: -50%;
+      top:30%;
+    }
+    ul li{
+      color: white;
+    }
+    ul>li{
+      color: black;
+    }
+    ul li[value]{
+      color: green;
+    }
+    ul li[class="telat"]{
+      color: grey;
+    }
+    ul > li li:first-child{
+      background-color: greenyellow;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="main">
+    <ul>
+      <li>Laptope</li>
+      <li class="telat">Tel Mobile
+        <ol>
+          <li>Iphone 12</li> 
+          <li>Samsung s20</li> </ol>
+      </li>
+      <li value="100euro">Pc</li>
+    </ul>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,13 @@
+Oraret: 
+
+Topic						Date			Dita			Time                Location
+ 
+Hyrje në Ueb Programim			22.02.2022		E Marte		10:00 - 11:30       Online
+Infrastruktura e Serverëve		24.02.2022		E Enjete		10:00 - 11:30       Online
+Programimi i Lojërave			05.03.2022		E Enjete		17:30 - 19:00       Fizikisht
+
+// Zhvillimi dhe Dizajnimi i Ueb		01.03.2022		E Marte		10:00 - 11:30       Online - Mbrojtie
+
+Mbrojtiet: 
+
+Menagjimi i projekteve: 09.02.2022 15:35

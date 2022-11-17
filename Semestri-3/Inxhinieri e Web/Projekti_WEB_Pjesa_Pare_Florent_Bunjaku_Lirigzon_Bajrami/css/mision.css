@@ -1,0 +1,64 @@
+
+/*Pjesa e permbajtjes(body)*/
+
+.misioni-content{
+    display: flex;
+}
+.rrethfaqes{
+    display: flex;
+    border:1px solid #eaeaea; ;
+    width: 20%;
+    border-radius: 6px; 
+}
+
+.rrethfaqes .list-group-item{
+    list-style-type: none;
+    padding: 25px;
+    border-bottom: 1px solid #eaeaea;
+ 
+
+}
+.list-group-item  a{
+    color: green;
+    
+}
+.sqarime{
+    width: 80%;
+    margin-left: 10px;
+    border:1px solid #eaeaea; 
+    border-radius: 7px;
+}
+.sqarime .titulli{
+    height: 40px;
+    background-color:#e6e6e6;
+    padding-top: 10px;
+    padding-left: 6px;
+    font-size: 20px;
+    list-style-type: none;
+    border-bottom: 1px solid #eaeaea;
+
+}
+.sqarime .shpjegimi{
+    padding-top: 20px;
+    list-style-type: none;
+    padding: 10px;
+}
+.sqarime ul li h4 ,
+.sqarime ul li p{
+    margin: 10px 0;
+}
+#rrethf{
+    font-size: 20px;
+}
+#misioniI{
+    color: #857e7e;
+}
+
+@media only screen and (max-width: 800px){
+    .rrethfaqes{
+        display: none;
+    }
+    .sqarime{
+        width: 100%;
+    }
+}

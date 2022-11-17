@@ -1,0 +1,5 @@
+1. Client wants to get an access token for a partical user.
+2. Client redirect user to authentication server to get an authorization grant.
+	- Authorization grant: is an credencial that represents approval of the user for the that client to access its resources. (there are some types of auth grants most used one is the authorization code).
+	- Authorization Code is returned to the client after the user has accepted the fact that someone will access its resources and its is logged in on the auth server. As result the client will use that code to ask auth server for an token for that user. The authorization code provides a few important security benefits, such as the ability to authenticate the client, as well as the transmission of the access token directly to the client without passing it through the resource owner's user-agent and potentially exposing it to others, including the resource owner.
+3. If user is not logged in on the authentication server he will be asked to be authenticated.

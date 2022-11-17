@@ -1,0 +1,3 @@
+Ne Pjesen e pare te ktij projekti kemi relizuar ne total 6 pages(index, about, contact, login, register, misioni).
+Me ane te nav barit mund te qaseni ne about duke klikuar tek Per Ne > Rreth IADK , ndersa tek misioni Per Ne > Misionet & Vizioni. Ndersa pjesa e Kontaktit mund
+te vizitohet tek linku ne fund te nav bar. 

@@ -1,0 +1,15 @@
+*{margin: 0;
+    padding: 0;}
+    body{display: flex;
+    justify-content: center;
+    }
+    em {font-weight: bold;}
+    #mbajtsiUebi{display: flex;
+    flex:0 0 400px;
+    flex-direction: column;
+    min-height: 160px;
+    background: rgb(207, 205, 205);
+    padding: 10px;
+    font-family:'Segoe UI light';
+    align-items: left;
+    }

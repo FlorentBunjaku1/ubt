@@ -1,0 +1,39 @@
+JWT = x.y.z
+
+x = headers
+y = payload
+z = signature (f(x + y)) where f - encryption function
+
+JWT with HMAC (asymetric encryption):
+
+s - secret key
+
+creating jwt:
+	1. creates the header and the payload with some data.
+		x = testheader
+		y = testpayload
+	2. Encodes header and payload as BASE64 string.
+		x = Xa2143l
+		y = plw514z
+	3. Create signature using HMAC.
+		c = x + "." + y
+		z = HMAC(c, s) => cvcsfq4213
+	4. Create JWT
+		JWT = c + "." + z
+
+veryfing jwt:
+	1. Gets JWT and seperates it
+		JWT = Xa2143l.plw514z.cvcsfq4213
+		x = Xa2143l
+		y = plw514z
+		z = cvcsfq4213
+	3. Create signature using HMAC.
+		c = x + "." + y
+		z' = HMAC(c, s)
+	4. Checks if new generated signature is the same as the provided one on the JWT
+		z' == z ? valid : invalid
+
+
+
+
+ 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+    <title>DOM Event</title>
+    <link rel="stylesheet" type="text/css"
+    href="L06-stilizimi01.css"/>
+    <script src="DOMevent01.js"></script>
+    </head>
+    <body>
+        <div id="mbajtsiUebi">
+        <h2>DOM dhe Events</h2>
+        <p>Pershendetje
+        <input type="text" id="texti"/></br>
+        <button id="butoni" >Kliko</button>
+        </p>
+        <div id="kontenti">
+        </div>
+        <!-- <input type="button" id="elementi2" value="Kliko Ketu"> -->
+        </div>
+        
+        <script type="text/javascript">
+            var shfaq = () => {
+                const a = document.getElementById('texti').value;
+                const msg = "<h3>Sot kemi ligjerat ne " + a + "</h3>";
+                kontenti.innerHTML = msg; 
+            }
+            const btn = document.getElementById('butoni');
+            btn.addEventListener('click', shfaq);
+            
+            // var eventi1 = () => {
+            //     alert('Faleminderit nje here');
+            // };
+            // var eventi2 = () => {
+            //     alert('Falleminderit 2 here');
+            // };
+            // elementi2.addEventListener('click',eventi1);
+            // elementi2.addEventListener('click',eventi2);
+        </script>
+    </body>
+</htm>

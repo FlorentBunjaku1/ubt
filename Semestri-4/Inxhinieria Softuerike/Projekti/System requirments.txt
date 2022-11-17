@@ -1,0 +1,17 @@
+1.Sistemi gjeneron listen e doktoreve me ate specilitet kur pacienti navigon tek specilaitet.
+2.Pacienti mund të vlersojë punën e doktorit pasi që të ket kryer një vizit tek ati, duke lënë një koment dhe zgjedhur yllat nga 1-5.
+3.Si doktor dua të kem mundësin e anulimit të terminit duke dhëne arsyen pse e kam bërë anulimin, si dhe pas anulimit me anë të e-mail të njoftohet pacienti që ka kërkuar atë vizitë.
+4.Sistemi mundëson Adminit krijimin e specizlimit të doktorve së bashku me shërbimet të cilat përkojne me atë specializim.
+5.Si pacient dua te kem mundesin e aplikimit per vaksinimin kunder covid në qendrën vaksinuese dhe për vaksinën që zgjedhë.
+6.Sistemi duhet ti listojë formularët aplikues për qendrën e vaksinimit përkatës ashtu që qendra të ketë mundësin e aporvimimit ose mos aprovimit të formularëve.
+7.Si qendër e vaksinimit dua që me anë të sistemit të mund të bëj porsin e vaksinave nga provajderët që janë në dispozicion me vaksina duke zgjedhur llojin e vaksinës dhe numrin e trye.
+
+
+
+
+
+1.Doktorët me vlerismet maksimale duhte gjithmon të vendosen në krye të listës me përjshtim në raste kur doktorët pagujn për reklamim dhe e zënë vendin e krye listës.
+2.Thirrje që sistemi bën në api e huaj duhet gjithmonë të kenë vonesë jo më shumë se 1-1.5 sekonda.
+3.Përgjigjet nga ana e assitentëve virtual nuk duhet të vonohet më shumë se 2 minuta, në mënyr që përodruesit e aplikacionit mos të zgjënjehen.
+4.Si Pacient dëshiroj që ikona e chatit të merr ngjyrë të kuqe kur më shkruan dikush, në mënyr që të dij nëse kam pranuar ndonjë mesazh.
+5.Të dhënat që pacienti jep së aplikacion si për caktim termini ose për aplikim për vaksinë janë konfidente dhe si të tilla duhet të  sigurohen.

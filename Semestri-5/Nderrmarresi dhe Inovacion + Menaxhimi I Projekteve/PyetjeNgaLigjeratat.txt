@@ -1,0 +1,12 @@
+// NOTES 
+Gjeja e pare gjate inicimi eshte identifikimi i nje problemi/mundesie. 	
+
+
+// PYETJE
+1.Cilat jane 5 proces grupet ne menaxhimin e projekteve?
+1.Inicimi, Planifikimi, Ekzekutimi, Monitorimi dhe Dorezimi.
+
+2.Cilat aktivitete ndodhin gjate planifikimit?
+2.Schedul(Zgjatja e projekti), Budgets(Sa financa na duhen), Resources(Resurset qe mer projekti), Risks and Staffing.
+
+

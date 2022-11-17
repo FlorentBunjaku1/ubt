@@ -1,0 +1,42 @@
+Nje thread i cili eshte ne gjendje te gjumit ose te pritjes (wait() or sleep() methods are invoked) , mund te pesojn interrupt
+nga nje thread tjeter duhet e thirrur metoden e ktij threadi t.interrupt(), kjo metod e largon nga gjendja e gjumit threadin
+dhe ai vazhdon punen e tij. Nese nuk gjened ne gjendje gjumi ose pritje dhe ne e therrasim metoden e ati threadi nga nje
+thread tjeter dmth metoden interrrupt() ateher aj thread nuk do ta ndal punen do vazdhoj normalisht, mirpo do vendos
+interrupted flag ne gjendje true, gje qe i mundeson programerit ta ndal threadin me vone.
+
+Interrupt eshte shenje qe i tregon threadit se duhet te ndal ate se qfare eshte duke bere dhe te filloj te bej diqka tjeter, cka programuesi
+i cakton.
+
+Interrupt status ose flag i tregon threadit se a duhet te vazdhoj te ekzekutoj ndonje metod e cila mund te na gjuaj interrupt exception apo jo, pra kjo vlen vetem per metodat
+te cilat na gjuajn interrupt exception, nese flag interrupted eshte ne gjendjen true kto metoda nuk mund te ekzekutohen dhe me nje interrupt te vetem ne i ngalim te gjitha metodat
+qe gjuajn ket lloj exception te punojne , per ket gjdo metod e till duhet te duhet te implementoj kodin i cili ne rast se gjuan nje interrupt exception ta kthej flag ne gjendjen
+false duke i mundesuar keshtu metodave te tjera te ekzekutohen.
+
+Dy Threda mund te komunikojne me njeri tjetrin duke ndare referencat e objekteve te njejte, kjo eshte menyr shum eficiente e 
+komunikimit mirpo mund te qoj ne dy lloje te gabimeve, 1.Thread Interference dhe 2.Memory Consistency.
+
+Thread Intereference ndodhe kur dy operacione qe kryhen ne Threda te ndryshem por veprojne ne te njejten te dhene, me qrast
+hapat qe ndodhi ne kto operacioni mund te mbulojne njeri tjetren dhe mos te kemi rezultatin e pritur.
+
+Memory Consistency Error ndodhe kur Thredat kane pamje(view) te ndryshem ne nje te dhena e cila normalisht duhet te jet e
+njejte per te dy thredat.
+
+Per te arritur menaxhimin e Memory Consistency ne duhet te krijojme Happens-Before Relationship.
+
+Happens-Before Relationship na mundeson qe te garantojme se e dhena ne nje variabel te shperndare mes disa thredave,
+te mund te shkruhet nga nje thread dhe kto ndryshime te jen te dukshme per lexim prej thredave tjere.Pra operacioni i 
+shkuarjes duhet te ndodhe perpara (Happens Beffore) operacionit te leximit.
+
+Happens-Before Relationship mund te definohet duke perdorur : synchronized, volatile, Thread.start(), Thread.join().
+
+♦Gjdo aksion ne Thread Happen-Before gjdo aksioni tjeter qe gjindet ne hapat me te vonshem te programit.
+♦Nje unlock i nje monitoruesi Happen-Before gjdo lock tjeter ne po te njejtin moitorues.
+♦Thirrja start() ne nje Thread ndodhe before-happens ndonje aksion tjeter ne po ate Thread.
+♦Cdo Aksion ne nje Thread Happen-Before se Threada-t qe kan thirr join() te kthehen me sukses nga join() ne ket thread.
+
+Synchronized : Metodat qe perbajne kete keyword na sigurojne dy gjera : 1.E bejn te pa munder qe dy Threda ta therrasin
+metoda te siknzronizuara te ktij objekti pa e kryer punen Threadi i cili e ka ne posedim per momentin. 2.Pasi qe njeri
+Thread del nga metoda e siknronizuar na siguron nje lidhje te qendrueshme Happens-Before per at metod ne ate objekt. Dhe i ben
+ndryshimet e dukshme per te gjith Thredat.
+
+

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0
+    }
+    
+    body {
+    display: flex;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    h2 {
+    text-align: center;
+    }
+    
+    p {
+    font-size: 14pt;
+    font-family: 'Segoe UI light';
+    margin: 10px;
+    }
+    
+    #formulari {
+    width: 40%;
+    margin: 0 auto;
+    background-color: azure;
+    }
+    
+    form li {
+    list-style: none;
+    margin-bottom: 5px;
+    }
+    
+    ul {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px 30px;
+    }

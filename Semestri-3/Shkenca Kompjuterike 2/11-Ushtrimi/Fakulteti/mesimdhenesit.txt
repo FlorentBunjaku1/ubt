@@ -1,0 +1,7 @@
+Profesori;Filan2 Fisteku2;1992;Data baza;Profesor asistent
+Profesori;Filan3 Fisteku3;1995;Algoritme;Profesor asistent
+Profesori;Filan3 Fisteku4;1991;Web Inxhinieria;Profesor asistent
+Asistenti;Filan6 Fisteku6;1990;Algoritme;Numerike
+Asistenti;Filan5 Fisteku5;1995;Web Inxhinieria;Numerike
+Asistenti;Filan4 Fisteku4;1997;Data Baza;Laboratorike
+Asistenti;Filan4 Fisteku4;1997;Data Baza;Laboratorike

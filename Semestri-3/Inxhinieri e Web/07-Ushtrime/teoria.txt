@@ -1,0 +1,7 @@
+1.Qellimi kryesor i eventeve eshte rritja e interatktivitetit mes webit dhe userit.
+
+2.Kemi disa lloje te eventeve , ato evente qe kan te bejne me shfletuesin , si peshembull onload , 
+ato evente qe kane t bejn me mouse pershembull click , mouseover, mouseout, gjithashtu ka edhe evente te tastieres si pershembull keypress, keyup, keydown etj..
+
+3.Ekzistojne dy menyra per definimin e eventeve , 1.Duke i vendosur eventin menjeher pas elementit si pershembull : button.onclick(function(){...});,
+2.Duke e perdorur metoden addEventListener , si ne vizijm : button.addEventListener('eventi', funtion(){...});

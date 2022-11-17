@@ -1,0 +1,5 @@
+Kollokfiumi i pare: 4,5,6 Maj.
+
+Clock Cycle (Cycle) - Eshte nje sinjal elektrik i quajtur puls, mbrenda nje cikli CPU mund te kryej nje nga operacionet bazike si fetching, access memory etj.
+
+Instruction Cycle - Eshte ckili qe bene ekzekutimin e instruksioneve gjate ketij cikli kryhen tri operacione: fetch-decode-execute.

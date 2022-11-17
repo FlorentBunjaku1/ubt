@@ -1,0 +1,72 @@
+Card:
+Une si pacient dua te kem mundesin e caktimit te terminit tek dokori qe zgjedh.
+
+Conversation:
+Q: A duhet te jet i regjistruar ne sistem pacienti?
+A: Po pacienti duhet te jet i regjistruar ne sistem para se te mund te caktoj termin.
+Q: Qfare te dhena duhet ofruar pacienti per caktimin e terminit.
+A: Duhet te ofroj numrin e telefonit, te zgjedh arsyen e vizites, shenim per doktorin,
+   daten e vizites.
+Q: Sa termine mund te catkoj pacienti?
+A: Pacienti mund te tekte nje a me shume temrine.
+Q: Qfare te dhena ofron pacienti kur regjistrohet ne sistem.
+A: Te dhenat personale si emri, mbiemri, leternjoftimi, numri i telefonit, vendbanimi,
+mosha, gjinia.
+
+Confirmation : 
+Pacienti mund te caktoj termin vetem nese eshte i regjistruar ne applikacion.
+Aplikimi per termin behet duket i mbushur te gjitha fushat e fomres per caktimin e temrinit.
+Pacienti e vendos nje numer me te cilin do e bej konfirimin e vizites.
+Pacienti e konfirmon vizten, termini caktohet dhe vendoset ne listen e termineve.
+
+
+
+
+Card: 
+Une si doktor deshiroj te definoj orarin e punes dhe ditet e pushimit.
+
+Conversation:
+Q: Cilet doktore mund ta bejne definimin e orarit?
+A: Secili doktor i cili ka te hapur dhe te verifikuar profilin si doktor ne sistemin tone.
+Q: Qfare te dhena duhet te paralotesoj doktorri per te mundur te vendos nje orar pune?
+A: Doktori qe deshiron te krijoj orarin e punes duhet te ket zgjedhur se pari specilizimet
+dhe sherbimet qe i ofron.
+Q: Sa specilaizime dhe sa sherbime duhet nje doktor te kete?
+A: Nje doktore duhet te kete se paku nje specializim dhe se paku 3 sherbime qe i ofron.
+Q: A mund doktori ta ndryshoj orarin e punes?
+A: Doktori mundet gjdo muaj ta ndryshoj orarin ose orari mbetet i njejti me ate qe e ka caktuar per muajin paraprak.
+Q: Cfare te behet nese doktori te catkoj dite pushim?
+A: Ne ditet te cilat i ka caktuar si dite pushimi nuk do te shfaqet mundesia per te caktuar termine nga
+pacientit, mirpo do shfaqen datat tjera te cilat jane te lira dhe jo pushim.
+Q: Cfare nese ka termine te caktuara me heret se te behet ndryshimi i orarit?
+A: Terminet nuk do te preken dhe doktori eshte i detyruar ti mbaje ato edhe nese e ka ndrruar orarin.
+ 
+Confirmation : 
+[Dhene] Doktori qe ka hyre ne applikacionin tone me account me te drejtat e doktorit.
+[Dhe] Doktori ka definuar specilizimin dhe sherbimet qe ofron.
+[Kur] Doktori ka zgjedhur opsionin per ndryshimin e orarit/defino orarin.
+[Dhe] Doktori ka caktuar ditet e javes ne te cilat punon dhe oren e fillimit dhe mbarimit si dhe ditet qe ka pushim.
+[Dhe] Doktori ka konfirmuar ndryshimin e orarit/ definimin e orarit.
+[Ateher] Orari i punes se doktorit perditsohet ne databaz dhe pacientet mund te caktojne temrine vetem ne orarin e ri
+
+
+Card: 
+Si pacient dua te kem mundesin te aplikoj online per vaksinim kunder covid-19.
+ 
+Conversation: 
+Q: Si behet aplikimi per vaksine?
+A: Aplikimi behet permes nje formulari i cili duhet plotesuar nga pacienti.
+Q: Qfare te dhenash duhet ofruar ne formular.
+A: Te dhena si mosha, gjina, vendi i lindjes, grupi i gjakut dhe treguesi nese ka alegjri ne permbajtien
+e vaksines te cilen e zgjedh po ashtu ne formular.
+Q: Ne cilat qendra vaksinuese mund pacienti te aplikoj?
+A: Ne formular do te shfaqen vetem qendrat vaksinuese te cilat i takojne regjionit ku ai banon dhe ne te
+cilat ka vaksina.
+
+Confirmation : 
+Pacienti i cili ka naviguar ne aplikaionin tone drejt e tek aplikimi per vaksinim kunder covid, mund ta kryej aplikimin duke mbushur fushat e fomrularit si 
+mosha, gjinia, vendi i lindjes, grupi i gjaku...., keto fusha vete mbushen nese pacienti eshte i regjistruar ne account dhe i ka dhene me heret ne profilin e tij 
+te dhenat e njejta. Pacienti e zgjedh nje nga qendrat vaksinuese dhe ne kohe reale i perditsohet permbajtia e drop down listes me lloje e vaksinave qe ajo qender 
+vaksinuese ka. Pacienti duhet ta zgjedh llojin e vaksinen me qraste i shfaqet edhe permbajtia e saj duke e pytur nese ka alergji ne ndonje nga permbajtesit. 
+Pacienti mbush edhe fushat e reja dhe e dergon formularin me ane te klikimit tek qenra vaksinuese qe ka zgjedhur te cilat pastaj e njoftojne ne telefon per 
+aprovimin e saj.
